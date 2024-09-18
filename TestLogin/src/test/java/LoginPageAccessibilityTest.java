@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
-public class LoginTest {
+public class LoginPageAccessibilityTest {
     WebDriver driver;
     String url;
 
@@ -39,6 +39,7 @@ public class LoginTest {
         } catch (Exception ex) {
             fail("can not login header");
         }
+
 
     }
 }
