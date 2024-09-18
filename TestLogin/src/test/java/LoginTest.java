@@ -9,10 +9,12 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 public class LoginTest {
     WebDriver driver;
+    String url;
 
     @BeforeEach
     public void starter() {
         driver = new ChromeDriver();
+        url = "http://localhost:8080/";
     }
 
     @AfterEach
@@ -22,9 +24,9 @@ public class LoginTest {
 
     @Test
     public void webpageAccessible() {
-
         try {
-            driver.get("http://localhost:8080/");
+            //String url = "http://localhost:8080/";
+            driver.get(url);
         } catch (Exception ex) {
             fail("Error");
         }
