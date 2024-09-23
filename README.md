@@ -5,7 +5,7 @@ Test a mocked  login page with Selenium and Java.
 - [Python3](https://www.python.org/downloads/)
 - [Firefox](https://www.mozilla.org/en-CA/firefox/new/)
 - [Java21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
-- [Eclipse](https://www.eclipse.org/downloads/)
+- [IntelliJ IDEA Community Edition](https://www.jetbrains.com.cn/en-us/idea/download/other.html)
 
 ## QuickStart
 Start the login page with simple Python http server
