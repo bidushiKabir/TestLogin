@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
@@ -13,7 +14,9 @@ public class LoginPageAccessibilityTest {
 
     @BeforeEach
     public void starter() {
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        // options.addArguments("--headless=new");
+        driver = new ChromeDriver(options);
         url = "http://localhost:8080/";
     }
 
