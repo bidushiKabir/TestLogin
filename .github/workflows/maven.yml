@@ -20,7 +20,6 @@ jobs:
 
     - name: Start HTTP Server
       run: |
-        cd ${{ github.workspace }}
         python -m http.server 8080 &
         sleep 5
 
